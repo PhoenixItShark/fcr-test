@@ -1,0 +1,34 @@
+@use "/src/style/utils/media_breakpoint" as *;
+@use "/src/style/utils/variables" as *;
+
+@include mobile() {
+  .title {
+    font-family: "Phonk Sans";
+    color: $color-white;
+    margin-top: 72px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .index_wrapper {
+    display: flex;
+    gap: 4px;
+  }
+  .slider_index {
+    margin-top: 24px;
+    margin-bottom: 72px;
+    width: 6px;
+    height: 6px;
+    background-color: $dark-blue;
+    border-radius: 999px;
+  }
+  .slider_index.active {
+    background-color: white;
+  }
+  .image_wrapper {
+    display: none;
+  }
+}

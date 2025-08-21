@@ -1,0 +1,55 @@
+@use "/src/style/utils/media_breakpoint" as *;
+@use "/src/style/utils/variables" as *;
+
+@include desktop() {
+  .review {
+    font-family: "Fixel Display";
+    font-weight: 400;
+    font-size: 24px;
+    width: 845px;
+    color: $color-white;
+    margin-top: 48px;
+    line-height: 120%;
+  }
+  .name {
+    font-family: "Fixel Display";
+    font-weight: 600;
+    font-size: 32px;
+    color: $color-white;
+    margin-top: 16px;
+  }
+  .image {
+    display: none;
+  }
+  .slider_wrapper {
+    margin-top: 32px;
+    width: 100%;
+  }
+  .slide_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .custom_prev {
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .custom_next {
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%) rotate(180deg);
+    cursor: pointer;
+    z-index: 10;
+  }
+}

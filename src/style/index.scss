@@ -1,2 +1,6 @@
-@use 'scss-reset';
-@import '../../node_modules/normalize-scss/sass/normalize.scss';
+@use "./utils/global";
+@use "scss-reset";
+@use "./utils/font";
+@use "./utils/container";
+
+@import "../../node_modules/normalize-scss/sass/normalize.scss";
