@@ -21,7 +21,7 @@ const Home = () => {
         </div>
         <Slider setActiveIndex={setActiveIndex} />
         <div className={styles.index_wrapper}>
-          {data.map((el, index) => (
+          {data.map((_, index) => (
             <span
               key={index}
               className={`${styles.slider_index} ${index === activeIndex ? styles.active : ""}`}
